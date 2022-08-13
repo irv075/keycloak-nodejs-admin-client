@@ -34,7 +34,7 @@ describe('Group user integration', () => {
     const username = faker.internet.userName();
     const user = await kcAdminClient.users.create({
       username,
-      email: 'wwwy3y3@canner.io',
+      email: 'test@keycloak.org',
       enabled: true,
     });
     currentUser = (await kcAdminClient.users.findOne({id: user.id}))!;
